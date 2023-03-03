@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
+
+body {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  overflow-x: hidden;
+  max-width: 1260px; 
+  margin: 0 auto; 
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 0px;
+  }
+  
+  h1 {
+    color: #3d3d3f;
+    font-size: 50px;
+    line-height: normal;
+  }
+  
+  h2 {
+    color: #575757;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 0px;
+  }
+  
+  h4 {
+    color: #797979;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  p {
+      color: #878787;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 25px;
+      letter-spacing: 0.2px;
+  }
+
+  li {
+    color: #878787;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    }
+
+  strong, span {
+    color: #878787;
+    font-weight: normal;
+  }
+
+  .botoncv {
+    background: #77DC9B;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    padding: 14px 32px 14px 32px;
+    margin-top: 10px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+
+  .botoncv:hover {
+    background-color: #5AB150;
+  }
+
+/* Recorte de imagenes */
+
+  #perfil{
+    display: inline-block;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+  }
+
+  #perfil img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30%;
+  }
+
+  #instagram_section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #instagram_section a {
+    flex-basis: calc(20% - 10px);
+    margin-right: 10px;
+  }
+  
+  #instagram_section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+/* Organización de la página */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f1f1;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+/* Organización de la página - Home */
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+    max-width: 1260px; 
+    margin: 0 auto; 
+  }
+  
+  #perfil {
+    margin-right: 100px;
+  }
+  
+  .flex-item {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .animate__backInDown {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+/* Organización de la página - Acerca */
+
+#acerca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+    max-width: 1260px; 
+    margin: 10 auto; 
+  }
+  
+  .perfil {
+    margin-right: 100px;
+  }
+  
+  .flex-item {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+
+/* Organización de la página - Experiencia */
+
+#proyectos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .proyectos_clases {
+    flex-basis: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .img-work {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  /* Organización Contacto */
+
+  #contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+    max-width: 1260px; 
+    margin: 10 auto; 
+  }
+
+  #contacto .form-control {
+    border-radius: 10px;
+    border-color: #f0f0f0;
+    box-shadow: none;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  #contacto .form-control:focus {
+    border-bottom: 2px solid #999999;
+  }
+  
+  #contact input {
+    height: 55px;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  #contacto button#submit {
+    background: #77DC9B;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    padding: 14px 32px 14px 32px;
+    margin-top: 10px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  #contacto button#submit:hover {
+    background: #d7b065;
+    color: #ffffff;
+  }
+  
